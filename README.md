@@ -1,16 +1,30 @@
-# React + Vite
+# Calculadora de IMC & Análise de Peso Ideal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em **React + Vite** para o cálculo do Índice de Massa Corporal (IMC), diagnóstico de faixa de peso saudável e acompanhamento de histórico de medições.
+O projeto chegou com inconsistências e falhas de execução e também apliquei algumas funcionalidades novas
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Cálculo de IMC e Classificação:** Processamento imediato do índice com base na altura e peso, classificando o resultado de acordo com os parâmetros da OMS (Magreza, Normal, Sobrepeso, Obesidade e Obesidade Grave).
+- **Análise de Faixa de Peso Ideal (Novo):** Cálculo inverso automático que determina o intervalo de peso saudável (baseado no IMC entre 18,5 e 24,9) para a estatura informada, indicando a meta exata em quilos a ganhar ou perder.
+- **Histórico Persistente (`localStorage`) (Novo):** Registo automático das últimas 10 medições no navegador com data, hora, medidas e classificação, incluindo opção para limpeza rápida dos dados.
+- **Validação e Saneamento de Dados (Novo):** Bloqueio de caracteres inválidos, prevenção contra múltiplas vírgulas e validação de limites antropométricos reais com feedback visual de erro.
+- **Destaque Dinâmico na Tabela (Novo):** Identificação visual automática da linha correspondente ao resultado atual do utilizador na tabela de referência.
+- **Ajuste dos CSS:** Ajustei a paleta de cores com alto contraste em tons de Azul Marinho e Marrom Claro.
 
-## React Compiler
+## Estrutura do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/App.jsx`: Gestão de estado principal, cálculo do IMC, cálculo da meta de peso ideal e sincronização com o `localStorage`.
+- `src/components/ImcCalc.jsx`: Formulário de entrada com validação estrita de dados e listagem do histórico recente.
+- `src/components/ImcTable.jsx`: Painel de resultados, análise de peso ideal e tabela de referência com destaque dinâmico.
+- `src/components/Button.jsx`: Componente reutilizável para ações de submissão, limpeza e navegação.
+- `src/data/data.js`: Base de dados estática com os intervalos e classificações do IMC.
 
-## Expanding the ESLint configuration
+## Como executar o projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Instale as dependências:
+   ```bash
+   npm install
+2. Inicie o projeto:npm run dev
+3. Abra no navegador a URL exibida no terminal, normalmente:
+   Local:   http://localhost:5173/
