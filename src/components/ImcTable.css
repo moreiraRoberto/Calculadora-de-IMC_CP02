@@ -1,0 +1,120 @@
+#result-container {
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+
+#imc-number {
+font-size: 2.2rem;
+margin-bottom: 0.4rem;
+font-weight: 800;
+color: var(--navy-primary);
+}
+
+#imc-info {
+font-size: 1.25rem;
+color: var(--text-muted);
+margin-bottom: 1.2rem;
+font-weight: 600;
+}
+
+/* Painel de Peso Ideal */
+.ideal-weight-box {
+background-color: var(--brown-card);
+border: 1px solid var(--brown-border);
+border-left: 5px solid var(--navy-primary);
+border-radius: 8px;
+padding: 1rem;
+margin-bottom: 1.5rem;
+text-align: left;
+}
+
+.ideal-weight-box h4 {
+color: var(--navy-primary);
+margin-bottom: 0.4rem;
+font-size: 1rem;
+}
+
+.ideal-weight-box p {
+font-size: 0.9rem;
+color: var(--text-dark);
+margin-bottom: 0.3rem;
+}
+
+.goal-text {
+margin-top: 0.4rem;
+font-weight: 700;
+}
+
+#result-container h3 {
+margin-bottom: 0.8rem;
+color: var(--navy-primary);
+font-size: 1.1rem;
+}
+
+#imc-table {
+margin-bottom: 1.5rem;
+font-size: 0.85rem;
+background-color: var(--white);
+border-radius: 8px;
+overflow: hidden;
+border: 1px solid var(--brown-border);
+}
+
+.table-header {
+font-weight: 700;
+background-color: var(--navy-primary);
+color: var(--white);
+}
+
+.table-header,
+.table-data {
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 0.8rem;
+border-bottom: 1px solid var(--brown-border);
+}
+
+.table-data:last-child {
+border-bottom: none;
+}
+
+.table-header h4,
+.table-data p {
+flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+max-width: 80px;
+}
+
+/* Decidi destacar a linha com o resultado do usuário */
+.active-row {
+background-color: var(--brown-card);
+font-weight: 700;
+color: var(--navy-dark);
+border-left: 4px solid var(--brown-accent);
+}
+
+#back-btn {
+align-self: center;
+width: 100%;
+}
+
+/* Cores das classes de status */
+.good {
+color: var(--status-good);
+}
+
+.low {
+color: var(--status-low);
+}
+
+.medium {
+color: var(--status-medium);
+}
+
+.high {
+color: var(--status-high);
+}

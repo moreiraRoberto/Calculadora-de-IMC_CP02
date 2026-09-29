@@ -1,0 +1,35 @@
+:root {
+--navy-dark: #0b192c;
+--navy-primary: #1b365d;
+--navy-light: #2c4c7e;
+--brown-bg: #f4ebe1;
+--brown-card: #e8d8c8;
+--brown-accent: #b07d52;
+--brown-border: #d5bdaf;
+--text-dark: #0f1c2e;
+--text-muted: #5a6578;
+--white: #ffffff;
+
+  /* Cores de status da classificação */
+--status-good: #1f7a4c;
+--status-low: #b86b11;
+--status-medium: #c84b31;
+--status-high: #9e1b1b;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lato", "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-primary) 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 2rem 1rem;
+color: var(--text-dark);
+}

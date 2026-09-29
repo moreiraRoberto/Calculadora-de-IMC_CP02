@@ -1,0 +1,11 @@
+.container {
+width: 100%;
+max-width: 480px;
+min-height: 420px;
+background-color: var(--brown-bg);
+padding: 2.2rem;
+border-radius: 16px;
+box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+border: 2px solid var(--brown-border);
+transition: all 0.3s ease;
+}

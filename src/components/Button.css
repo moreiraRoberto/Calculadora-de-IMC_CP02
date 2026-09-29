@@ -1,0 +1,28 @@
+button {
+text-transform: uppercase;
+padding: 0.95rem 1.5rem;
+background-color: var(--navy-primary);
+border: none;
+border-radius: 8px;
+color: var(--white);
+font-weight: 700;
+letter-spacing: 0.5px;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+flex: 1;
+}
+
+button:hover {
+background-color: var(--navy-dark);
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(11, 25, 44, 0.25);
+}
+
+#clear-btn {
+background-color: var(--brown-accent);
+color: var(--white);
+}
+
+#clear-btn:hover {
+background-color: #93643d;
+}
